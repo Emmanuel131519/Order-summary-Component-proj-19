@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -12,26 +14,43 @@
 --Dark-blue: hsl(223, 47%, 23%);
 }
 
-body {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .card {
-    border-radius: 15px;
-    width: 340px;
+html,body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+body{
+    background-image: url(assets/pattern-background-mobile.svg);
+background-color: var(--Pale-blue);
+background-size: contain;
+background-repeat: no-repeat;
+padding: 1rem;
+font-family: "Red Hat Display", sans-serif;
+
+}
+
+
+main {
+background-color: var(--Very-pale-blue);
     text-align: center;
+    margin: auto;
+    width: 20rem;
+    border-radius: 5%;
+}
+  
+
+  .card-body h2{
+    font-weight: 900;
   }
   
-  .card-header {
-    padding: 0;
-  }
   
   .card-header img {
     width: 100%;
     display: block;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px ;
   }
   
   .card-body {
@@ -43,28 +62,51 @@ body {
   }
   
   .card-body p {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 25px;
   }
   
+.button-1 button{
+    padding: 5rem;
+}
 
+.div-button-1{
+  padding-top: 1rem;
+}
   
   .button-1 {
+
     width: 100%;
     padding: 15px;
-    color: white;
+    color: var(--Pale-blue);
+    background-color: var(--Dark-blue);
     border: none;
     border-radius: 10px;
     font-weight: bold;
     margin-bottom: 15px;
   }
+
+  button{
+    font-family: "Red Hat Display", sans-serif;
+    cursor: pointer;
+
+  }
   
 
   
  .button-2 {
+    width: 100%;
+    padding: 15px;
+    color: var(--Desaturated-blue);
+    background-color: var(--Very-pale-blue);
     border: none;
+    border-radius: 10px;
     font-weight: bold;
-    font-size: 13px;
-    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  .plan-div-2{
+    display: flex;
+    gap: 20px;
   }
   
