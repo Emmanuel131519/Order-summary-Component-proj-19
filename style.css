@@ -36,15 +36,15 @@ main {
 background-color: var(--Very-pale-blue);
     text-align: center;
     margin: auto;
-    width: 20rem;
+    width: 27rem;
     border-radius: 5%;
 }
   
 
   .card-body h2{
     font-weight: 900;
+    color: var(--Dark-blue);
   }
-  
   
   .card-header img {
     width: 100%;
@@ -64,6 +64,8 @@ border-top-left-radius: 10px ;
   .card-body p {
     font-size: 16px;
     margin-bottom: 25px;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
   }
   
 .button-1 button{
@@ -82,14 +84,13 @@ border-top-left-radius: 10px ;
     background-color: var(--Dark-blue);
     border: none;
     border-radius: 10px;
-    font-weight: bold;
     margin-bottom: 15px;
+    font-weight: 800;
   }
 
   button{
     font-family: "Red Hat Display", sans-serif;
     cursor: pointer;
-
   }
   
 
@@ -101,12 +102,44 @@ border-top-left-radius: 10px ;
     background-color: var(--Very-pale-blue);
     border: none;
     border-radius: 10px;
-    font-weight: bold;
     margin-bottom: 15px;
+    font-weight: 800;
   }
 
   .plan-div-2{
     display: flex;
     gap: 20px;
+    align-items: center;
   }
-  
+
+  .plan-div-2-img{
+width: 40%;
+
+  }
+
+  .plan{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plan-div-3 h3{
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  @media(min-width:765px){
+    body{
+      background-image: url(assets/pattern-background-desktop.svg);
+      background-color: var(--Pale-blue);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+  }
+  main{
+    width: 22rem;
+  }
+
+  .button-1 {
+    box-shadow: 0px 5px 10px var(--Dark-blue);
+  }
+}
